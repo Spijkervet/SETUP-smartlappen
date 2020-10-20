@@ -1,2 +1,2 @@
-# SETUP-smartlappen
+# SETUP x Smartlappen
 SETUP x Smartlappen project
