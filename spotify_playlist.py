@@ -33,8 +33,5 @@ if __name__ == "__main__":
     for i in chunks(ids, 100):
         print("Added {} items to playlist {}".format(len(i), playlist_id))
         spotify.playlist_add_items(playlist_id, i)
-    # with open("spotify_ids.txt", "w") as f:
-    #     for i in ids:
-    #         f.write("{}\n".format(i))
 
     print("Found {} of {} tracks on Spotify".format(len(ids), len(df)))
