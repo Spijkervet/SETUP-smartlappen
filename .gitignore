@@ -1,1 +1,6 @@
+__pycache__
+.env
+.cache*
 spotify_ids.txt
+cached*
+gpt2-lyrics
