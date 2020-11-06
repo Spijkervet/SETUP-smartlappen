@@ -1,10 +1,13 @@
 import pandas as pd
 from googletrans import  Translator
-from langdetect import detect
+# from langdetect import detect
 
 def translate(row):
     if not pd.isnull(row["lyrics"]):
-        if detect(row["lyrics"]) == "nl":
+        # lang = detect(row["lyrics"])
+        if "nigga" in row["lyrics"].lower() or "fuck" in row["lyrics"].lower() or "neuken" in row["lyrics"].lower() or "money" in row["lyrics"].lower():
+            row["lyrics"] = ""
+        else:
             row["lyrics"] = translator.translate(row["lyrics"], dest='en').text
     return row
 

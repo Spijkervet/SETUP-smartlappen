@@ -1,3 +1,6 @@
 [submodule "remi"]
 	path = remi
 	url = https://github.com/Spijkervet/remi
+[submodule "gpt-2-lyrics"]
+	path = gpt-2-lyrics
+	url = https://github.com/spijkervet/gpt-2-lyrics
