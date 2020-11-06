@@ -2,3 +2,5 @@ pandas
 lyricsgenius
 python-dotenv
 transformers
+mido
+tensorflow
