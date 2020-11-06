@@ -28,13 +28,14 @@ if __name__ == "__main__":
                 lyrics = row["lyrics"]
 
                 try:
+                    # for l in lyrics.split("\n"):
                     lyrics_nl = translator.translate(lyrics, dest='en').text
-                    f.write(lyrics_nl)
-                    f.write(" <|endoftext|> ")
-                    f.write("\n")
+                    if lyrics_nl != lyrics:
+                        f.write(lyrics_nl)
+                        f.write(" <|endoftext|> ")
+                        f.write("\n")
                 except Exception as e:
                     print("Failed {}".format(row["song"]))
                     print(e)
                     time.sleep(20)
 
-    df.to_csv("lyrics_translated.csv", index=False)
