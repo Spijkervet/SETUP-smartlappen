@@ -3,4 +3,3 @@ __pycache__
 .cache*
 spotify_ids.txt
 cached*
-gpt2-lyrics
